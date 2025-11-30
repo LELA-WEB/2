@@ -1,3 +1,59 @@
+<!-- start_loading -->
+<!DOCTYPE>
+<html lang='en'>
+<head>
+    <title>הדף נטען..</title>
+    <style>
+        .loading-gif {
+            max-width: 500px;
+        }
+
+        .pre-loader {
+            position: fixed;
+            z-index: 100; /** make sure this is the highest value compared to all other divs **/
+            top: 0;
+            left: 0;
+            background: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .pre-loader.hidden {
+            animation: fadeOut 8s; /** change to 20s */
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--- Your content goes here -->
+
+<div class='pre-loader'>
+    <img class='loading-gif' alt='loading' src="img/logo.jpg"/>
+</div>
+
+<!-- js to hide preloader loading is done -->
+<script type='text/javascript'>
+    window.addEventListener('load', function () {
+        document.querySelector('.pre-loader').className += ' hidden';
+    });
+</script>
+</body>
+</html>
+
+
+
+<!-- End_loading -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -32,7 +88,8 @@
                         <div class="col-lg-3">
                             <div class="logo">
                                 <a href="index.html">
-                                    <h1>▪️Lela-Dagan▪️</h1>
+                                    <h1>-LELA-</h1>
+                                    <h1>Dagan</h1>
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -40,12 +97,12 @@
                         <div class="col-lg-9">
                             <div class="top-bar-right">
                                 <div class="text">
-                                    <h2>8:00 - 17:00</h2>
-                                    <p>Opening Hour Mon - Fri</p>
+                                    <h2>8:00 - 17:00🕐</h2>
+                                    <p>שעות פתיחה: שני - שישי</p>
                                 </div>
                                 <div class="text">
-                                    <h2>050-780-7333</h2>
-                                    <p>Call Us For Free Consultation</p>
+                                    <h2>050-780-7333📲</h2>
+                                    <p>התקשרו אלינו לייעוץ! </p>
                                 </div>
                                 <div class="social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -176,6 +233,9 @@
          class="img-fluid w-100" 
          style="height: auto; object-fit: cover; display: block;">
 </div>
+
+
+
              <!-- Feature Start -->
             <div class="feature">
                 <div class="container">
@@ -279,104 +339,102 @@
 
 
 
-            <!-- Service Start -->
-            <div class="service">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>תחומי המשרד:</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-landmark"></i>
-                                </div>
-                                <h3>משפט אזרחי | Civil Law</h3>
-                                <p>
-                                   תחום רחב הכולל תביעות כספיות, סכסוכים חוזיים ונזקי רכוש.
-מיועד ליישוב מחלוקות בין אנשים פרטיים או חברות.
-מטרתו להגיע לפתרון צודק, מהיר ויעיל — בבית המשפט או מחוצה לו.
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <h3>דיני משפחה | Family Law</h3>
-                                <p>
-                                    עוסק בכל ההיבטים המשפטיים של משפחה וזוגיות.
-כולל גירושין, משמורת, הסדרי ראייה, מזונות, צוואות וירושות.
-המטרה היא לנהל את ההליך ברגישות ובמקצועיות מקסימלית.
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-hand-holding-usd"></i>
-                                </div>
-                                <h3>משפט עסקי | Business Law</h3>
-                                <p>
-                                   תחום העוסק בליווי משפטי לעסקים, חברות ויזמים.
-כולל עריכת חוזים, הסכמים, ייעוץ משפטי שוטף וניהול סיכונים.
-מסייע להגן על אינטרסים עסקיים ולמנוע מחלוקות עתידיות.
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <h3>דיני ירושות ומטלטלין</h3>
-                                <p>
-                                   עוסק בזכויות תלמידים, אנשי חינוך ומוסדות לימוד.
-כולל עתירות, אפליה, השעיות, ומחלוקות מול משרד החינוך.
-מטרה: להבטיח סביבה חינוכית הוגנת ושוויונית לכל אדם.
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-gavel"></i>
-                                </div>
-                                <h3>משפט פלילי | Criminal Law</h3>
-                                <p>
-                                   כולל ייצוג בעבירות פליליות מכל הסוגים — מהליכים מוקדמים ועד משפט מלא.
-מתמקד בהגנה על זכויות החשוד והנאשם בכל שלבי ההליך.
-הדגש הוא על אסטרטגיה מדויקת, ניהול נכון של ראיות והשגת תוצאה מיטבית.
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <h3>חדלות פרעון והוצל"פ</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-					<div style="text-align: center;">
-   
-</div>
 
+            <!-- Service Start -->
+<div class="service">
+    <div class="container">
+        <div class="section-header">
+            <h2>תחומי המשרד:</h2>
+        </div>
+        <div class="row">
+            <!-- Service 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-building"></i>
                     </div>
+                    <h3>ליווי והקמת חברות</h3>
+                    <p>
+                        1. ליווי והקמת חברות בע״מ – תכנון מבנה משפטי נכון והקמה מדויקת.<br>
+                        2. נדל"ן ומקרקעין – עסקאות מורכבות, בדיקות עומק, מיסוי ורישום.
+                    </p>
+                    <a class="btn" href="">Learn More</a>
                 </div>
             </div>
-            <!-- Service End -->
-            
+            <!-- Service 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-file-contract"></i>
+                    </div>
+                    <h3>חוזים וליווי שוטף</h3>
+                    <p>
+                        3. חוזים והסכמים – ניסוחים חדים שמגנים עלייך באמת.<br>
+                        4. ליווי שוטף לעסקים – פתרון משפטי בכל שלב.
+                    </p>
+                    <a class="btn" href="">Learn More</a>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-scroll"></i>
+                    </div>
+                    <h3>צוואות ובדיקות נאותות</h3>
+                    <p>
+                        5. צוואות וירושות – סדר, בהירות וניהול תהליך.<br>
+                        6. בדיקות נאותות – חשיפת כל הפרטים שרוב האנשים מפספסים.
+                    </p>
+                    <a class="btn" href="">Learn More</a>
+                </div>
+            </div>
+            <!-- תחומי המשרד -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-handshake"></i>
+                    </div>
+                    <h3>ריטיינר חודשי והוצאה לפועל</h3>
+                    <p>
+                        7. ריטיינר חודשי – מסגרת ליווי לעסקים שרוצים גב משפטי קבוע.<br>
+                        8. הוצאה לפועל – פתרונות מהירים וחכמים.
+                    </p>
+                    <a class="btn" href="">Learn More</a>
+                </div>
+            </div>
+            <!-- Service 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-chart-line"></i>
+                    </div>
+                    <h3>הערכת שווי ומכרזים</h3>
+                    <p>
+                        9. הערכת שווי – ניתוחים כלכליים־משפטיים מדויקים.<br>
+                        10. מכרזים – ליווי מלא, הגשות וזכיות.
+                    </p>
+                    <a class="btn" href="">Learn More</a>
+                </div>
+            </div>
+            <!-- Service 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-balance-scale"></i>
+                    </div>
+                    <h3>רשויות וגישור</h3>
+                    <p>
+                        11. רשויות – עיריות, מסים, בנקים ועוד.<br>
+                        12. גישור – פתרון סכסוכים בדרכים רגועות וחכמות.
+                    </p>
+                    <a class="btn" href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
 			
             
            
@@ -467,283 +525,24 @@
             <!-- FAQs End -->
 
 
-            <!-- Testimonial Start -->
-            <div class="testimonial">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Review From Client</h2>
-                    </div>
-                    <div class="owl-carousel testimonials-carousel">
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-1.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-2.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-3.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-4.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-1.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-2.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-3.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Testimonial End -->
-
-
-            <!-- Blog Start -->
-            <div class="blog">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Latest From Blog</h2>
-                    </div>
-                    <div class="owl-carousel blog-carousel">
-                        <div class="blog-item">
-                            <img src="img/blog-1.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Civil Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-2.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Family Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-3.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Business Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-1.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Education Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-2.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Criminal Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-3.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Cyber Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-1.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Business Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Blog End -->
-            
-            
-            <!-- Newsletter Start -->
-            <div class="newsletter">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Subscribe Our Newsletter</h2>
-                    </div>
-                    <div class="form">
-                        <input class="form-control" placeholder="Email here">
-                        <button class="btn">Submit</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Newsletter End -->
+          
 			
 			       <!-- Contact Start -->
 <div class="contact" style="padding: 80px 0; background-color: #f9f9f9;">
     <div class="container">
         <!-- Section Header -->
         <div class="section-header text-center mb-5">
-            <h2 style="font-family: 'Miriam Libre', serif; font-weight: 700;">צור קשר</h2>
-            <p style="font-family: 'Alef', sans-serif; font-weight: 500; font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
+            <h2 style="font-family: 'felix007', serif; font-weight: 700;">צור קשר</h2>
+            <p style="font-family: 'asakim', sans-serif; font-weight: 500; font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
                 נשמח לשוחח איתך, לענות על שאלות ולהתאים פתרונות משפטיים אישיים לצרכים שלך.
             </p>
         </div>
 
-        <div class="row align-items-center">
-            <!-- Image -->
-            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-                <img src="img/contact.jpg" alt="צור קשר" class="img-fluid rounded shadow">
-            </div>
+     
 
             <section id="contact">
   
-  <h1 class="section-header">Contact</h1>
+
   
   <div class="contact-wrapper">
   
@@ -767,7 +566,7 @@
       
       <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
         <div class="alt-send-button">
-          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          <i class="fa fa-paper-plane"></i><span class="send-text">שליחת טופס</span>
         </div>
       
       </button>
@@ -779,11 +578,11 @@
       <div class="direct-contact-container">
 
         <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">סחרוב דוד 3 , Rishon Le Zion, Israel</span></i></li>
           
-          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">050-780-7333</a></span></i></li>
           
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">leladagan@gmail.com</a></span></i></li>
           
         </ul>
 
@@ -850,9 +649,9 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-contact">
                                 <h2>Get In Touch</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <p><i class="fa fa-map-marker-alt"></i>סחרוב דוד 3 , Rishon Le Zion, Israel</p>
+                                <p><i class="fa fa-phone-alt"></i>050-780-7333</p>
+                                <p><i class="fa fa-envelope"></i>leladagan@gmail.com</p>
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>

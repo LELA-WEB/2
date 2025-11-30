@@ -37,7 +37,7 @@ h6 {
 /* דוגמה לשימוש בגופן פליקס007 לגוף הטקסט או חלקים מיוחדים */
 .felix-text {
     font-family: 'Felix007', sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     color: #121518;
 }
 
@@ -56,13 +56,13 @@ a:focus {
 }
 
 .btn:focus {
-    box-shadow: none;
+    box-shadow: yes;
 }
 
 .wrapper {
     position: relative;
     width: 100%;
-    max-width: 1366px;
+    max-width: 1200px;
     margin: 0 auto;
     background: #ffffff;
 }
@@ -98,7 +98,7 @@ a:focus {
 /**********************************/
 .top-bar {
     position: relative;
-    height: 100px;
+    height: 115px;
     background: #000000;
 }
 
@@ -111,9 +111,9 @@ a:focus {
 .top-bar .logo h1 {
     margin: 0;
     color: #aa9166;
-    font-size: 140px;
-    line-height: 45px;
-    font-weight: 280;
+    font-size: 70px;
+    line-height: 42px;
+    font-weight: 175px;
 }
 
 .top-bar .logo img {
@@ -132,7 +132,7 @@ a:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 70px;
+    height: 10px;
     padding: 0 20px;
     text-align: center;
     border-left: 1px solid rgba(255, 255, 255, .15);
@@ -1559,7 +1559,7 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px 'Lato', sans-serif;
+  font: 300 18px 'asakim', sans-serif;
   letter-spacing: 1.9px;
   color: #0a0a0a;
 }
