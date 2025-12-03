@@ -1,46 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;600;700&family=Assistant:wght@300;400;600&display=swap');
-
 /*******************************/
 /********* General CSS *********/
 /*******************************/
 body {
     color: #666666;
-    background: #ffffff;
-    font-family: 'Felix007', 'Frank Ruhl Libre', serif;
+    background: #000000;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    direction: rtl;
 }
 
-/* כותרות */
 h1,
 h2, 
 h3, 
 h4,
 h5, 
 h6 {
-    font-family: 'Felix007', 'Frank Ruhl Libre', serif; /* פליקס007 קודם, אם לא זמין ישתמש ב-Frank Ruhl Libre */
-    font-weight: 700;
-    font-style: normal;
+    font-family: 'Arial', serif;
+    font-weight: 400;
+    font-style: italic;
     color: #121518;
 }
-
-/* הוספת גופן פליקס007 */
-@font-face {
-    font-family: 'Felix007';
-    src: url('fonts/Felix007.woff2') format('woff2'),
-         url('fonts/Felix007.woff') format('woff'),
-         url('fonts/Felix007.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* דוגמה לשימוש בגופן פליקס007 לגוף הטקסט או חלקים מיוחדים */
-.felix-text {
-    font-family: 'Felix007', sans-serif;
-    font-size: 40px;
-    color: #121518;
-}
-
 
 a {
     color: #454545;
@@ -56,13 +34,13 @@ a:focus {
 }
 
 .btn:focus {
-    box-shadow: yes;
+    box-shadow: none;
 }
 
 .wrapper {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     background: #ffffff;
 }
@@ -98,12 +76,12 @@ a:focus {
 /**********************************/
 .top-bar {
     position: relative;
-    height: 115px;
+    height: 90px;
     background: #000000;
 }
 
 .top-bar .logo {
-    padding: 10px 0;
+    padding: 22px 0;
     text-align: left;
     overflow: hidden;
 }
@@ -111,14 +89,14 @@ a:focus {
 .top-bar .logo h1 {
     margin: 0;
     color: #aa9166;
-    font-size: 70px;
-    line-height: 42px;
-    font-weight: 175px;
+    font-size: 60px;
+    line-height: 22.5px;
+    font-weight: 800;
 }
 
 .top-bar .logo img {
-    max-width: 100%;
-    max-height: 60px;
+    max-width: 15%;
+    max-height: 100px;
 }
 
 .top-bar .top-bar-right {
@@ -132,30 +110,30 @@ a:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 10px;
-    padding: 0 20px;
+    height: 80px;
+    padding: 0 30px;
     text-align: center;
     border-left: 1px solid rgba(255, 255, 255, .15);
 }
 
 .top-bar .text h2 {
     color: #ffffff;
-    font-family: 'Assistant', sans-serif;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-style: normal;
     font-size: 25px;
     margin: 0;
 }
 
 .top-bar .text p {
-    color: #ffffff;
-    font-size: 13px;
+    color: #aa9166;
+    font-size: 15px;
     margin: 0;
 }
 
 .top-bar .social {
     display: flex;
-    height: 90px;
+    height: 80px;
     font-size: 0;
     justify-content: flex-end;
 }
@@ -166,7 +144,7 @@ a:focus {
     justify-content: center;
     width: 60px;
     height: 100%;
-    font-size: 22px;
+    font-size: 18px;
     color: #ffffff;
     border-right: 1px solid rgba(255, 255, 255, .15);
 }
@@ -243,7 +221,7 @@ a:focus {
 
 .nav-bar .btn {
     color: #ffffff;
-    border: 2px solid #aa9166;
+    border: 1.5px solid #aa9166;
     border-radius: 0;
 }
 
@@ -270,7 +248,7 @@ a:focus {
     }
     
     .nav-bar a.nav-link {
-        padding: 8px 15px;
+        padding: 15px 18px;
         font-size: 15px;
         text-transform: uppercase;
     }
@@ -303,7 +281,7 @@ a:focus {
 .carousel {
     position: relative;
     width: 100%;
-    height: calc(100vh - 170px);
+    height: calc(80vh - 130px);
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
@@ -341,25 +319,25 @@ a:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 170px);
+    height: calc(80vh - 150px);
 }
 
 .carousel .carousel-caption h1 {
-    color: #ffffff;
-    font-size: 50px;
-    font-weight: 700;
+    color: #eeeeee;
+    font-size: 100px;
+    font-weight: 850;
     margin-bottom: 20px;
 }
 
 .carousel .carousel-caption p {
-    color: #ffffff;
-    font-size: 25px;
+    color: #bcbcbc;
+    font-size: 35px;
     margin-bottom: 25px;
 }
 
 .carousel .carousel-caption .btn {
     padding: 15px 35px;
-    font-size: 18px;
+    font-size: 90px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -535,7 +513,6 @@ a:focus {
     }
 }
 
-
 /*******************************/
 /******** Top Feature CSS ******/
 /*******************************/
@@ -603,6 +580,7 @@ a:focus {
     margin: 0;
     font-size: 18px;
 }
+
 
 /*******************************/
 /********** About CSS **********/
@@ -1193,6 +1171,7 @@ a:focus {
     color: #999999;
 }
 
+
 /*******************************/
 /********* Timeline CSS ********/
 /*******************************/
@@ -1291,7 +1270,7 @@ a:focus {
     padding: 5px 10px;
     color: #121518;
     background: #aa9166;
-    font-family: 'Assistant', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
 }
 
@@ -1445,11 +1424,11 @@ a:focus {
 }
 
 .portfolio figure a {
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'EB Garamond', serif;
     color: #aa9166;
     font-size: 25px;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: 600;
+    font-style: italic;
     transition: .3s;
 }
 
@@ -1466,271 +1445,208 @@ a:focus {
 
 
 /*******************************/
-/*********** Contact CSS *******/
+/********* Contact CSS *********/
 /*******************************/
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  padding-bottom: 100px;
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
 }
 
-#contact {
-  width: 100%;
-  height: 100%;
+.contact .contact-info {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 30px;
+    background: #121518;
 }
 
-.section-header {
-  text-align: center;
-  margin: 0 auto;
-  padding: 40px 0;
-  font: 300 60px 'Oswald', sans-serif;
-  color: #0d0d0d;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  max-width: 840px;
-}
-
-/* Left contact page */
-.form-horizontal {
-  /*float: left;*/
-  max-width: 400px;
-  font-family: 'Lato';
-  font-weight: 400;
-}
-
-.form-control, 
-textarea {
-  max-width: 400px;
-  background-color: #ffffff;
-  color: #0d0d0d;
-  letter-spacing: 1px;
-}
-
-.send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
-}
-
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
-}
-
-.send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
-}
-
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-
-/* Begin Right Contact Page */
-.direct-contact-container {
-  max-width: 400px;
-}
-
-/* Location, Phone, Email Section */
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
-}
-
-.list-item {
-  line-height: 4;
-  color: #aaa;
-}
-
-.contact-text {
-  font: 300 18px 'asakim', sans-serif;
-  letter-spacing: 1.9px;
-  color: #0a0a0a;
-}
-
-.place {
-  margin-left: 62px;
-}
-
-.phone {
-  margin-left: 56px;
-}
-
-.gmail {
-  margin-left: 53px;
-}
-
-.contact-text a {
-  color: #767765;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover {
-  color: #767765;
-  text-decoration: none;
-}
-
-
-/* Social Media Icons */
-.social-media-list {
-  position: relative;
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.social-media-list li a {
-  color: #000000;
-}
-
-.social-media-list li {
-  position: relative; 
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 10px 3px;
-  line-height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: rgb(27,27,27);
-  cursor: pointer; 
-  transition: all .2s ease-in-out;
-}
-
-.social-media-list li:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all .2s ease-in-out;
-}
-
-.social-media-list li:hover {
-  background-color: #fff; 
-}
-
-.social-media-list li:hover:after {
-  opacity: 1;  
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-}
-
-.social-media-list li:hover a {
-  color: #000;
-}
-
-.copyright {
-  font: 200 14px 'Oswald', sans-serif;
-  color: #555;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-hr {
-  border-color: rgba(255,255,255,.6);
-}
-
-/* Begin Media Queries*/
-@media screen and (max-width: 850px) {
-  .contact-wrapper {
+.contact .contact-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 30px;
     display: flex;
-    flex-direction: column;
-  }
-  .direct-contact-container, .form-horizontal {
-    margin: 0 auto;
-  }  
-  
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 300px;
-  }    
-  .social-media-list li {
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
-  }
-  .social-media-list li:after {
+    align-items: flex-start;
+    flex-direction: row;
+    border: 2px solid #aa9166;
+}
+
+.contact .contact-item i {
+    display: inline-block;
     width: 60px;
     height: 60px;
-    line-height: 60px;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #aa9166;
+    border: 2px solid #aa9166;
 }
 
-@media screen and (max-width: 569px) {
-
-  .direct-contact-container, .form-wrapper {
-    float: none;
-    margin: 0 auto;
-  }  
-  .form-control, textarea {
-    
-    margin: 0 auto;
-  }
- 
-  
-  .name, .email, textarea {
-    width: 280px;
-  } 
-  
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 280px;
-  }  
-  .social-media-list {
-    left: 0;
-  }
-  .social-media-list li {
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
-    font-size: 2rem;
-  }
-  .social-media-list li:after {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-  }
-  
+.contact .contact-text {
+    position: relative;
+    width: auto;
+    padding-left: 15px;
 }
 
-@media screen and (max-width: 410px) {
-  .send-button {
-    width: 99%;
-  }
+.contact .contact-text h2 {
+    color: #aa9166;
+    font-size: 25px;
+    font-weight: 600;
 }
+
+.contact .contact-text p {
+    margin: 0;
+    color: #999999;
+    font-size: 16px;
+}
+
+.contact .contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact .contact-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.contact .contact-form input {
+    height: 60px;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: #121518;
+}
+
+.contact .contact-form textarea {
+    height: 190px;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: #121518;
+}
+
+.contact .contact-form .btn {
+    padding: 16px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aa9166;
+    background: #121518;
+    border: 2px solid #aa9166;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.contact .contact-form .btn:hover {
+    color: #121518;
+    background: #aa9166;
+}
+
 
 /*******************************/
-/*********** Footer CSS ********/
+/******* Single Page CSS *******/
+/*******************************/
+.single {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 65px 0;
+}
+
+.single img {
+    margin: 10px 0 15px 0;
+}
+
+.single .table,
+.single .list-group {
+    margin-bottom: 30px;
+}
+
+.single .ul-group {
+    padding: 0;
+    list-style: none;
+}
+
+.single .ul-group li {
+    margin-left: 2px;
+}
+
+.single .ul-group li::before {
+    position: relative;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.single .ol-group {
+    padding-left: 18px;
+}
+
+
+/*******************************/
+/********** Newsletter *********/
+/*******************************/
+.newsletter {
+    position: relative;
+    max-width: 900px;
+    margin: 45px auto -140px auto;
+    padding: 30px 15px;
+    background: #aa9166;
+    z-index: 1;
+}
+
+.newsletter .section-header {
+    margin-bottom: 25px;
+}
+
+.newsletter .section-header h2::before,
+.newsletter .section-header h2::after {
+    border-color: #ffffff;
+}
+
+.newsletter .form {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter input {
+    height: 50px;
+    border: 2px solid #121518;
+    border-radius: 0;
+}
+
+.newsletter .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #aa9166;
+    background: #121518;
+    border-radius: 0;
+    border: 2px solid #aa9166;
+    transition: .3s;
+}
+
+.newsletter .btn:hover {
+    color: #121518;
+    background: #aa9166;
+}
+
+
+/*******************************/
+/********* Footer CSS **********/
 /*******************************/
 .footer {
     position: relative;
-    padding-top: 45px;
+    margin-top: 45px;
+    padding-top: 180px;
     background: #121518;
+    color: #ffffff;
 }
 
 .footer .footer-about,
@@ -1743,38 +1659,36 @@ hr {
 
 .footer .footer-about h2,
 .footer .footer-link h2,
-.footer .footer-contact h2 {
-    margin-bottom: 20px;
-    font-size: 22px;
+.footer .footer-contact h2{
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 25px;
     font-weight: 600;
     color: #aa9166;
 }
 
-.footer .footer-about p {
-    color: #999999;
-    font-size: 16px;
-}
-
 .footer .footer-link a {
     display: block;
-    color: #999999;
     margin-bottom: 10px;
-    font-size: 16px;
+    color: #999999;
     transition: .3s;
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
 }
 
 .footer .footer-link a:hover {
     color: #aa9166;
+    letter-spacing: 1px;
 }
 
-.footer .footer-contact p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.footer .footer-contact i {
-    margin-right: 10px;
-    color: #aa9166;
+.footer .footer-contact p i {
+    width: 25px;
 }
 
 .footer .footer-social {
@@ -1784,156 +1698,76 @@ hr {
 
 .footer .footer-social a {
     display: inline-block;
+}
+
+.footer .footer-social a i {
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 18px;
     color: #aa9166;
-    transition: .3s;
 }
 
-.footer .footer-social a:hover {
-    color: #ffffff;
+.footer .footer-social a:last-child i {
+    margin: 0;
 }
 
-.footer .copyright {
+.footer .footer-social a:hover i {
+    color: #999999;
+}
+
+.footer .footer-menu .f-menu {
     position: relative;
-    padding: 25px 15px;
+    padding: 15px 0;
+    background: #000000;
+    font-size: 0;
     text-align: center;
+}
+
+.footer .footer-menu .f-menu a {
     color: #999999;
     font-size: 16px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .3);
 }
 
-.footer .copyright a {
+.footer .footer-menu .f-menu a:hover {
     color: #aa9166;
-    text-decoration: none;
 }
 
-.footer .copyright a:hover {
+.footer .footer-menu .f-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+
+.footer .copyright {
+    padding: 30px 15px;
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: #999999;
+}
+
+.footer .copyright .col-md-6:last-child p {
+    text-align: right;
+}
+
+.footer .copyright p a {
+    color: #aa9166;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.footer .copyright p a:hover {
     color: #ffffff;
 }
 
-
-/*******************************/
-/********** Back to Top ********/
-/*******************************/
-.back-to-top {
-    position: fixed;
-    display: none;
-    width: 44px;
-    height: 44px;
-    right: 15px;
-    bottom: 15px;
-    padding: 12px 0 10px 0;
-    font-size: 22px;
-    text-align: center;
-    color: #aa9166;
-    background: #121518;
-    border-radius: 0;
-    border: 2px solid #aa9166;
-    transition: .5s;
-    z-index: 9;
-}
-
-.back-to-top:hover {
-    color: #121518;
-    background: #aa9166;
-}
-
-/*******************************/
-/********* Responsive CSS *******/
-/*******************************/
-@media (max-width: 991.98px) {
-    .navbar .dropdown-menu {
-        box-shadow: none;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .page-header {
-        padding: 60px 0;
-    }
-
-    .timeline .timeline-container {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .top-bar {
+@media (max-width: 768px) {
+    .footer .copyright p,
+    .footer .copyright .col-md-6:last-child p {
+        margin: 5px 0;
         text-align: center;
     }
-
-    .top-bar .text {
-        margin-bottom: 10px;
-    }
-
-    .navbar .navbar-brand {
-        margin-right: 0;
-    }
-
-    .service .service-item h3 {
-        font-size: 22px;
-    }
-
-    .feature .feature-item h3 {
-        font-size: 22px;
-    }
-
-    .blog .blog-item h3 {
-        font-size: 22px;
-    }
-
-    .team .team-text h2 {
-        font-size: 20px;
-    }
-
-    .testimonial .testimonial-item h2 {
-        font-size: 20px;
-    }
-
-    .contact .contact-info h2 {
-        font-size: 20px;
-    }
-
-    .footer .footer-about h2,
-    .footer .footer-link h2,
-    .footer .footer-contact h2 {
-        font-size: 20px;
-    }
 }
-
-
-/*******************************/
-/********** Custom Font ********/
-/*******************************/
-
-/* גופן עברי יוקרתי – הוגדר בקבצי ההתחלה */
-body {
-    font-family: 'Assistant', 'Alef', 'Varela Round', sans-serif;
-    direction: rtl;
-    text-align: right;
-}
-
-/* כותרות יוקרתיות */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Frank Ruhl Libre', 'Assistant', serif;
-    font-weight: 700;
-    direction: rtl;
-    text-align: right;
-}
-
-/* טקסטים בפסקאות */
-p, a, li, span, button {
-    font-family: 'Assistant', 'Alef', 'Varela Round', sans-serif;
-    direction: rtl;
-    text-align: right;
-}
-
-/*******************************/
-/*********** THE END ***********/
-/*******************************/
-
-
-
